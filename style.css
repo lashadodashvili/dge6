@@ -1,5 +1,147 @@
+.container1 {
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+}
+
+h1 {
+    margin: 50px auto;
+    font-size: 30px;
+    color: white;
+}
+
+.nav {
+    margin-top: 30px;
+    margin-right: 40px;
+    color: white;
+}
+
+
+
+
 .aside {
-    width: 376px;
-    height: 100%;
+    width: 20%;
+    height: 1100px;
     background-color: #525A65;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 {
+    width: 80%;
+
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+h2 {
+    font-size: 55px;
+    color: #5A5A5A;
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #AFAFAF;
+}
+
+
+.container3 {
+    display: grid;
+    width: 75vw;
+    height: 1000px;
+
+    margin: 10px auto;
+    grid-template-areas:
+        "item1 item1 item2 item2 item3 item3 item4 item4"
+        "graph graph graph graph graph diag diag diag"
+        "graph graph graph graph graph diag diag diag"
+        "graph graph graph graph graph diag diag diag"
+        "con con con con do do do do"
+        "con con con con do do do do";
+        grid-gap: 20px;
+
+
+}
+
+.container3 div {
+    box-sizing: border-box;
+    
+
+}
+
+.usages {
+    grid-area: item1;
+    background-image: url("./usages.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.impression {
+    grid-area: item2;
+    background-image: url("./impression.png");
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.totalsale {
+    grid-area: item3;
+    background-image: url("./sale.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.totalprofit {
+    grid-area: item4;
+    background-image: url("./profit.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.salesreport {
+    grid-area: graph;
+    background-image: url("./Sales\ report\ chart.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.userstatistic {
+    grid-area: diag;
+    background-image: url("./user\ statistics.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.newconnection {
+    grid-area: con;
+    background-image: url("./new\ conneciton.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.todolist {
+    grid-area: do;
+    background-image: url("./user\ statistics1.png");
+    background-size: cover;
+    background-position: center;
 }
